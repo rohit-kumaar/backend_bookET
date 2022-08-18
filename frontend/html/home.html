@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Rohit Kumar" />
+    <meta name="description"
+        content="Create a bucket list for your books with this portable journal for readers, book lovers, book clubs, or book bloggers. " />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookET | Home</title>
+
+    <!--  Favicon Start   -->
+    <link rel="icon" href="/icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+    <!--   Favicon End   -->
+
+    <!-- Bootstrap Icon Start  -->
+    <link rel="stylesheet" href="/scss/vendors/bootstrap-icons.css" />
+    <!-- Bootstrap Icon End  -->
+
+    <!-- OwlCarousel Start -->
+    <link rel="stylesheet" href="/scss/vendors/OwlCarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/scss/vendors/OwlCarousel/owl.theme.default.min.css" />
+    <!-- OwlCarousel End -->
+
+    <!--   Custom CSS Start   -->
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <!--   Custom CSS End   -->
+
+    <!-- Custom JS Start -->
+    <script src="/js/index.js" defer></script>
+    <!-- Custom JS End -->
+</head>
+
+<body>
+    <!--  Header Start  -->
+    <header class="header | py-4 fixed-top w-100 bg-violet-600">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg py-0" aria-label="primary-navigation">
+                <!-- Logo  -->
+                <a class="navbar-brand" href="javascript:void(0)">
+                    <img loading="lazy" src="/images/brand-logo.png" alt="BookET Logo" title="BookET" />
+                    <img loading="lazy" src="/images/booket-logo.png" alt="BookET Logo" title="BookET" />
+                </a>
+                <!-- Hamburger -->
+                <button class="navbar-toggler border-3 border-white text-white-50" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span
+                        class="navbar-toggler-icon | d-flex align-items-center justify-content-center position-relative">
+                        <span class="position-absolute bg-white-100"></span>
+                        <span class="position-absolute bg-white-100"></span>
+                        <span class="position-absolute bg-white-100"></span>
+                    </span>
+                </button>
+
+                <div class=" collapse navbar-collapse w-100" id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Search  -->
+                        <form class="position-relative">
+                            <div class="navbar__date ">
+                                <label for="date" class="form-label mb-0 fw-semibold">Date</label>
+                                <input class="form-control border-0" placeholder="I Want to go out?" type="text"
+                                    onfocus="(this.type = 'date')" id="date" />
+                            </div>
+
+                            <div class="navbar__location ">
+                                <label for="location" class="form-label mb-0 fw-semibold">Location</label>
+                                <input class="form-control border-0" type="search" name="search" id="location"
+                                    placeholder="My current location" />
+                            </div>
+
+                            <div class="navbar__looking-for ">
+                                <label for="looking-for" class="form-label mb-0 fw-semibold">Looking for</label>
+                                <input class="form-control border-0" type="search" name="search" id="looking-for"
+                                    placeholder="What are you in the mood for?" />
+                            </div>
+
+                            <a href="javascript:void(0)"
+                                class="navbar__search-icon | rounded-circle d-flex align-items-center justify-content-center bg-orange">
+                                <span class="icon-search text-white fs-4"></span>
+                            </a>
+                        </form>
+                    </div>
+
+
+                    <div class="header__right ">
+
+                        <!-- Event  -->
+                        <div class="d-flex flex-column align-items-center justify-content-between fw-semibold">
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" fill="currentColor"
+                                    class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                </svg>
+                            </a>
+
+                            <a href="javascript:void(0)">
+                                Host Event
+                            </a>
+                        </div>
+
+                        <!-- Wishlist  -->
+                        <div class="d-flex flex-column align-items-center justify-content-between fw-semibold">
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" fill="currentColor"
+                                    class="bi bi-suit-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                                </svg>
+                            </a>
+
+                            <a href="javascript:void(0)">
+                                Wishlist
+                            </a>
+                        </div>
+
+
+                        <!-- Notification  -->
+                        <div class="d-flex flex-column align-items-center justify-content-between fw-semibold">
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" fill="currentColor"
+                                    class="bi bi-bell " viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)">
+                                Notification
+                            </a>
+                        </div>
+
+
+                        <!-- Profile  -->
+                        <div class="header-profile d-flex flex-column align-items-center justify-content-between">
+                            <a href="./profile.html">
+                                <img loading="lazy" src="/images/profile.svg" alt="Profile" title="Profile"
+                                    class="header-profile__img" />
+                            </a>
+
+                            <div class="dropdown">
+                                <button class="header-profile__dropdown dropdown-toggle p-0 text-white fw-semibold"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Profile
+                                </button>
+                                <ul class="header-profile__dropdown-menu dropdown-menu  bg-white">
+                                    <li><a class="dropdown-item fw-semibold " href="../index.html">Sign out</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--   Header End   -->
+
+    <!--  Main Start  -->
+    <main class="main" id="main">
+        <!-- Slider Start  -->
+        <div class="slider">
+            <div class="container">
+                <div class="owl-carousel | position-relative">
+                    <div>
+                        <img loading="lazy" src="/images/manoj-bajpayee.svg" alt="Manoj Bajpayee"
+                            title="Manoj Bajpayee" />
+                    </div>
+                    <div>
+                        <img loading="lazy" src="/images/nucleya.svg" alt="Manoj Bajpayee" title="nucleya" />
+                    </div>
+                    <div>
+                        <img loading="lazy" src="/images/hariharan.svg" alt="Manoj Bajpayee" title="Hariharan" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider End -->
+
+        <!-- Event Category Start -->
+        <section class="events">
+            <div class="container">
+                <!-- Header  -->
+                <div class="featured__header | d-flex align-items-center justify-content-between">
+                    <h2 class="h2 mb-0">Event Category</h2>
+                    <a class="featured--text" href="javascript:void(0)">
+                        <h3 class="h6 m-0 fw-semibold text-orange">VIEW ALL</h3>
+                    </a>
+                </div>
+
+                <!-- Border Design  -->
+                <div class="featured__design ">
+                    <span class="bg-orange"></span>
+                    <span class="bg-orange"></span>
+                </div>
+
+                <!-- Card  -->
+                <div class="events__category">
+                    <a href="javascript:void(0)"
+                        class="events__card | bg-violet-600 d-inline-block my-2 pt-4 ps-4 text-white position-relative"
+                        title="Click me">
+                        <h4>Music</h4>
+                        <h6>24 Events Nearby</h6>
+
+                        <span class="events__btn |  d-flex align-items-center justify-content-center">
+                            <span class="icon-card-right-arrow"></span>
+                        </span>
+
+                        <span class="events__img | position-absolute"></span>
+                    </a>
+
+                    <a href="javascript:void(0)"
+                        class="events__card | bg-violet-600 d-inline-block my-2 p-4 text-white position-relative"
+                        title="Click me">
+                        <h4>Business & Startups</h4>
+                        <h6>36 Events Nearby</h6>
+
+                        <span class="events__btn |   d-flex align-items-center justify-content-center">
+                            <span class="icon-card-right-arrow"></span>
+                        </span>
+
+                        <span class="events__img | position-absolute"></span>
+                    </a>
+
+                    <a href="javascript:void(0)"
+                        class="events__card | bg-violet-600 d-inline-block my-2 p-4 text-white position-relative"
+                        title="Click me">
+                        <h4>Arts & Culture</h4>
+                        <h6>36 Events Nearby</h6>
+
+                        <span class="events__btn |   d-flex align-items-center justify-content-center">
+                            <span class="icon-card-right-arrow"></span>
+                        </span>
+
+                        <span class="events__img position-absolute"></span>
+                    </a>
+
+                    <a href="javascript:void(0)"
+                        class="events__card | bg-violet-600 d-inline-block my-2 p-4 text-white position-relative"
+                        title="Click me">
+                        <h4>Film & Media</h4>
+                        <h6>36 Events Nearby</h6>
+
+                        <span class="events__btn |   d-flex align-items-center justify-content-center">
+                            <span class="icon-card-right-arrow"></span>
+                        </span>
+
+                        <span class="events__img | position-absolute"></span>
+                    </a>
+
+                    <a href="javascript:void(0)"
+                        class="events__card | bg-violet-600 d-inline-block my-2 p-4 text-white position-relative"
+                        title="Click me">
+                        <h4>Food & Drink</h4>
+                        <h6>36 Events Nearby</h6>
+
+                        <span class="events__btn | d-flex align-items-center justify-content-center">
+                            <span class="icon-card-right-arrow"></span>
+                        </span>
+
+                        <span class="events__img | position-absolute"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Event Category End -->
+
+        <!-- Popular Event Start -->
+        <section class="popular featured">
+            <div class="container">
+                <div class="featured__header | d-flex align-items-center justify-content-between">
+                    <h2 class="h2 mb-0">Popular Events</h2>
+                    <a class="featured--text" href="javascript:void(0)">
+                        <h3 class="h6 m-0 fw-semibold text-orange">VIEW ALL</h3>
+                    </a>
+                </div>
+
+                <!-- Border Design  -->
+                <div class="featured__design ">
+                    <span class="bg-orange"></span>
+                    <span class="bg-orange"></span>
+                </div>
+
+                <section class="featured__events popular__events | pb-5">
+                    <div class="row row-cols-sm-2 row-cols-xl-4">
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top position-relative" title="Click me">
+                                    <div class="position-absolute wish">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                Great Qatar Food <br />
+                                                Festival
+                                            </h6>
+                                        </a>
+
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">
+                                        Mosman Park, Sydney
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top | position-relative" title="Click me">
+                                    <div class="wish | position-absolute">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                QAWARIB Qatar <br />
+                                                International Boat <br />
+                                                Show 2021
+                                            </h6>
+                                        </a>
+
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">The Pearl Qatar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top | position-relative" title="Click me">
+                                    <div class="position-absolute wish">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                Commercial Bank CHI Al <br />
+                                                SHAQAB Presented by <br />
+                                                Longines
+                                            </h6>
+                                        </a>
+
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">Al Gannas</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top | position-relative" title="Click me">
+                                    <div class="position-absolute wish">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                Tasty Street Qatar at <br />
+                                                Katara Cultural Village
+                                            </h6>
+                                        </a>
+
+                                        <a class="" href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">Al Gannas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- Popular Event End -->
+
+        <!-- Recommended Events start  -->
+        <section class="recommended featured">
+            <div class="container">
+                <div class="featured__header | d-flex align-items-center justify-content-between">
+                    <h2 class="h2 mb-0">Recommended Events</h2>
+                    <a class="featured--text" href="javascript:void(0)">
+                        <h3 class="h6 m-0 fw-semibold text-orange">VIEW ALL</h3>
+                    </a>
+                </div>
+
+                <!-- Border Design  -->
+                <div class="featured__design ">
+                    <span class="bg-orange"></span>
+                    <span class="bg-orange"></span>
+                </div>
+
+                <section class="featured__events recommended__events | pb-5">
+                    <div class="row row-cols-sm-2 row-cols-xl-4">
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top position-relative" title="Click me">
+                                    <div class="position-absolute wish">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                The International <br />
+                                                Handicrafts & Traditional <br />
+                                                Productions Cultural ..
+                                            </h6>
+                                        </a>
+
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">
+                                        Mosman Park, Sydney
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top | position-relative" title="Click me">
+                                    <div class="wish | position-absolute">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                International Horticultural<br />
+                                                Expo Doha
+                                            </h6>
+                                        </a>
+
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">The Pearl Qatar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top | position-relative" title="Click me">
+                                    <div class="position-absolute wish">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                Torba Farmers Market <br />
+                                                2020
+                                            </h6>
+                                        </a>
+
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">Ceremonial Court, Education City</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top | position-relative" title="Click me">
+                                    <div class="position-absolute wish">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                Sea Caves Water Park
+                                            </h6>
+                                        </a>
+
+                                        <a class="" href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">Desert Falls Water and <br />
+                                        Adventure park</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- Recommended Events end -->
+
+        <!-- Nearby Events start  -->
+        <section class="nearby featured">
+            <div class="container">
+                <div class="featured__header | d-flex align-items-center justify-content-between">
+                    <h2 class="h2 mb-0">Nearby Events</h2>
+                    <a class="featured--text" href="javascript:void(0)">
+                        <h3 class="h6 m-0 fw-semibold text-orange">VIEW ALL</h3>
+                    </a>
+                </div>
+
+                <!-- Border Design  -->
+                <div class="featured__design ">
+                    <span class="bg-orange"></span>
+                    <span class="bg-orange"></span>
+                </div>
+
+                <section class="featured__events nearby__events | pb-5">
+                    <div class="row row-cols-sm-2 row-cols-xl-4">
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top position-relative" title="Click me">
+                                    <div class="position-absolute wish">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                HOT AIR BALLOON <br />
+                                                FLIGHTS OVER THE DOHA
+                                            </h6>
+                                        </a>
+
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">
+                                        Doha
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top | position-relative" title="Click me">
+                                    <div class="wish | position-absolute">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                Full Day Desert Safari
+                                            </h6>
+                                        </a>
+
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">Doha, Qatar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top | position-relative" title="Click me">
+                                    <div class="position-absolute wish">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                North of Qatar
+                                            </h6>
+                                        </a>
+
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">Doha, Qatar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top | position-relative" title="Click me">
+                                    <div class="position-absolute wish">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                Qatar History vs Future
+                                            </h6>
+                                        </a>
+
+                                        <a class="" href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">Doha, Qatar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- Nearby Events end -->
+
+        <!-- Featured Events Start -->
+        <section class="featured">
+            <div class="container">
+                <div class="featured__header | d-flex align-items-center justify-content-between">
+                    <h2 class="h2 mb-0">Featured Events</h2>
+                    <a class="featured--text" href="javascript:void(0)">
+                        <h3 class="h6 m-0 fw-semibold text-orange">VIEW ALL</h3>
+                    </a>
+                </div>
+
+                <!-- Border Design  -->
+                <div class="featured__design ">
+                    <span class="bg-orange"></span>
+                    <span class="bg-orange"></span>
+                </div>
+
+                <section class="featured__events | pb-5">
+                    <div class="row row-cols-sm-2 row-cols-xl-4">
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top | position-relative" title="Click me">
+                                    <div class="position-absolute wish">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a class="card-title text-black" href="javascript:void(0)">
+                                            <h6>Qatar Museum Tour</h6>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">Doha, Qatar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top position-relative" title="Click me">
+                                    <div class="wish | position-absolute">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                Longines Global <br />
+                                                Champions Tour - Doha
+                                            </h6>
+                                        </a>
+
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">
+                                        Blue Mountains, NSW
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top | position-relative" title="Click me">
+                                    <div class="position-absolute wish">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                Qatar Sports and <br />
+                                                Educational Tour
+                                            </h6>
+                                        </a>
+
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">Surry Hills, Qatar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col- p-2">
+                            <div class="card">
+                                <a href="javascript:void(0)" class="card-img-top | position-relative" title="Click me">
+                                    <div class="position-absolute wish">
+                                        <span class="icon-add-to-cart"> </span>
+                                    </div>
+                                </a>
+                                <div class="card-body p-0">
+                                    <p class="card-text | text-orange mt-2 pt-1">
+                                        Sun, <time datetime="2022-11-15">Nov 15</time>,
+                                        <time datetime="11:00">11:00 AM</time>
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between pe-4">
+                                        <a href="javascript:void(0)" class="card-title text-black">
+                                            <h6>
+                                                Shaikh faisal Camal <br />
+                                                Race track
+                                            </h6>
+                                        </a>
+
+                                        <a href="javascript:void(0)">
+                                            <span class="icon-share"> </span>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text text-gray-500">Surry Hills, Qatar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- Featured Events End -->
+
+        <!-- Featured Organizers start  -->
+        <section class="featured organizers">
+            <div class="container">
+                <div class="featured__header | d-flex align-items-center justify-content-between">
+                    <h2 class="h2 mb-0">Featured Organizers</h2>
+                    <a class="featured--text" href="javascript:void(0)">
+                        <h3 class="h6 m-0 fw-semibold text-orange">VIEW ALL</h3>
+                    </a>
+                </div>
+
+                <!-- Border Design  -->
+                <div class="featured__design ">
+                    <span class="bg-orange"></span>
+                    <span class="bg-orange"></span>
+                </div>
+
+                <section class="organizers__events pb-5 ">
+                    <div class="row  row-cols-sm-2 row-cols-xl-5">
+                        <div class="my-2">
+                            <div class="organizers-card">
+                                <div class="organizers-card__closeBtn text-silver">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                    </svg>
+                                </div>
+                                <img loading="lazy" src="/images/qatar-green-leaders.svg" alt="Qatar Green Leaders"
+                                    title="Qatar Green Leaders" />
+                                <h2 class="organizers-card__title fs-6 fw-semibold text-center">Qatar Green Leaders</h2>
+                                <p class="fs-14 text-gray-500"><span>273</span> Followers</p>
+                                <div class="btn organizers-card__btn">Follow</div>
+                            </div>
+                        </div>
+
+                        <div class="my-2">
+                            <div class="organizers-card">
+                                <div class="organizers-card__closeBtn text-silver">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                    </svg>
+                                </div>
+                                <img loading="lazy" src="/images/moc-doha-2021.svg" alt="Qatar Green Leaders"
+                                    title="Qatar Green Leaders" />
+                                <h2 class="organizers-card__title fs-6 fw-semibold text-center">MOC Doha 2021 <br />
+                                    Managing...</h2>
+                                <p class="fs-14 text-gray-500"><span>273</span> Followers</p>
+                                <div class="btn organizers-card__btn">Follow</div>
+                            </div>
+                        </div>
+
+                        <div class="my-2">
+                            <div class="organizers-card">
+                                <div class="organizers-card__closeBtn text-silver">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                    </svg>
+                                </div>
+                                <img loading="lazy" src="/images/qatar-green-leaders.svg" alt="Qatar Green Leaders"
+                                    title="Qatar Green Leaders" />
+                                <h2 class="organizers-card__title fs-6 fw-semibold text-center">Waxdale Certified <br />
+                                    Launcher Program</h2>
+                                <p class="fs-14 text-gray-500"><span>273</span> Followers</p>
+                                <div class="btn organizers-card__btn">Follow</div>
+                            </div>
+                        </div>
+
+                        <div class="my-2">
+                            <div class="organizers-card">
+                                <div class="organizers-card__closeBtn text-silver">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                    </svg>
+                                </div>
+                                <img loading="lazy" src="/images/moc-doha-2021.svg" alt="Qatar Green Leaders"
+                                    title="Qatar Green Leaders" />
+                                <h2 class="organizers-card__title fs-6 fw-semibold text-center">CH2 Agency
+                                    Bangalore</h2>
+                                <p class="fs-14 text-gray-500"><span>273</span> Followers</p>
+                                <div class="btn organizers-card__btn">Follow</div>
+                            </div>
+                        </div>
+
+                        <div class="my-2">
+                            <div class="organizers-card">
+                                <div class="organizers-card__closeBtn text-silver">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                    </svg>
+                                </div>
+                                <img loading="lazy" src="/images/moc-doha-2021.svg" alt="Qatar Green Leaders"
+                                    title="Qatar Green Leaders" />
+                                <h2 class="organizers-card__title fs-6 fw-semibold text-center">CH2 Agency
+                                    Bangalore</h2>
+                                <p class="fs-14 text-gray-500"><span>273</span> Followers</p>
+                                <div class="btn organizers-card__btn">Follow</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- Featured Organizers end -->
+    </main>
+    <!-- Main End  -->
+
+    <!-- Footer Start-->
+    <footer class="footer | mw-100 bg-violet-600">
+        <div class="container">
+            <div class="footer__content | row text-white">
+                <!-- Column 1 start -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <a href="#main">
+                        <img loading="lazy" src="/images/booket-logo.png" alt="BookET Logo" title="BookET" />
+                    </a>
+                    <p class="my-4">Are you an event company?</p>
+                    <div class="footer__btn | d-flex">
+                        <a href="javascript:void(0)" class="btn | bg-orange text-white">Join us</a>
+                    </div>
+                </div>
+                <!-- Column 1 end -->
+
+                <!-- Column 2 start -->
+                <div class="col-12 col-md-6 col-lg-2 mb-4">
+                    <h6 class="fw-bold mb-4">Quick Link</h6>
+                    <nav aria-label="footer-navigation">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" class="">About us </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="">Partners</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="">Terms of service</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="">Warranty policy</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Column 2 end -->
+
+                <!-- Column 3 start -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-4">Get in Touch</h6>
+                    <nav aria-label="footer-navigation">
+                        <ul class="d-inline-block text-start">
+                            <li class="mb-1">
+                                <a href="javascript:void(0)">
+                                    <span class="icon-location | text-orange me-2"></span>Sherin Tower 857,
+                                    Sydney
+                                </a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="mailto:someone@example.com"><span
+                                        class="icon-envelope | text-orange me-2"></span>info@booket.com
+                                </a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="tel:+919876543210">
+                                    <span class="icon-call | text-orange me-2"></span>+919876543210
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Column 3 end -->
+
+                <!-- Column 4 start -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Follow us</h6>
+                    <p>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <span class="icon-Instagram text-white fs-4"></span>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <span class="icon-twitter text-white fs-4 mx-3"></span>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <span class="icon-facebook text-white fs-4"></span>
+                        </a>
+                    </p>
+                    <h6 class="mt-4 mb-3 fw-bold">Download App</h6>
+                    <div class="booking__app footer__app | d-flex">
+                        <a href="https://www.apple.com/in/app-store/" target="_blank">
+                            <img loading="lazy" class="position-relative pointer-event mb-0"
+                                src="/images/booking-app-store.svg" alt="App Store" title="Click And Go To App Store" />
+                        </a>
+
+                        <a href="https://play.google.com/store" target="_blank">
+                            <img loading="lazy" class="position-relative pointer-event mb-0"
+                                src="/images/booking-play-store.svg" alt="Google Play"
+                                title="Click And Go To Google Play" />
+                        </a>
+                    </div>
+                </div>
+                <!-- Column 4 end -->
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JQuery Start -->
+    <script src="/scss/vendors/OwlCarousel/jquery.min.js"></script>
+    <!-- JQuery End -->
+
+    <!-- OwlCarousel JS Start -->
+    <script src="/scss/vendors/OwlCarousel/owl.carousel.min.js"></script>
+    <!-- OwlCarousel JS End -->
+
+    <!--   Slider JS Start   -->
+    <script src="/js/slider.js"></script>
+    <!--   Slider JS End   -->
+
+    <!-- Bootstrap Js Start  -->
+    <script src="/scss/vendors/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Js End   -->
+</body>
+
+</html>
